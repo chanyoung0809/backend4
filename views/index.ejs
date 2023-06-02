@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>메인페이지</div>
+    <!-- 
+        입력한 데이터값을 서버에 요청해서 데이터베이스에 저장할 수 있도록 처리 
+    -->
+    <form action="/board/insert" method="get">
+        <input type="text" name="username">
+        <input type="text" name="userid">
+        <select name="address">
+            <option>서울</option>
+            <option>경기</option>
+            <option>인천</option>
+        </select>
+        <button type="submit">전송버튼</button>
+    </form>
+    <!--  DB에서 가져온 데이터값들 출력 -->
+    <% data.forEach((item ,idx) => { %>
+        <div class="users">
+            <h2><%- item.username %></h2>
+            <p><%- item.userid %></p>
+            <p><%- item.address %></p>
+        </div>
+    <% }) %>
+</body>
+</html>

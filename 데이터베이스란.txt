@@ -1,0 +1,34 @@
+컴퓨터 언어 - DB
+php - mysql / 
+asp - mssql / 
+node.js - mongoDB / <-자바스크립트 언어
+java - oracle
+
+DB 사용하려면?
+https://www.mongodb.com/
+
+Security Quickstart
+ID cisalive
+PW cisaliveS2
+
+DataBase <- document, collection: 데이터들이 들어가있는 묶음 파일
+
+Database Deployment > connect > drivers 
+
+Driver - Node.js
+Version - 5.5 or later
+
+npm install mongodb@3.6.4 <- 작업중인 터미널에 최초 1회
+
+mongodb+srv://cisalive:cisaliveS2@cluster0.cjlsn98.mongodb.net/?retryWrites=true&w=majority
+
+express 홈페이지 - 안내서 - 데이터베이스 통합
+https://expressjs.com/ko/guide/database-integration.html#mongo
+
+데이터베이스 내 document 처음 만들기
+Explore Your Data -> Add My Own Data
+
+Database name :DB이름
+Collection name : document 이름
+
+create DataBase로 여러 개의 DB 만들 수 있음
